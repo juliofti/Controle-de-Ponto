@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+       <LinearLayout
+           android:layout_width="110dp"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center">
+
+           <TextView
+               android:id="@+id/lt_data"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Data"
+               android:gravity="center"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lt_horario_entrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrada Manha"/>
+
+            <TextView
+                android:id="@+id/lt_horario_almoco_entrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Entrada Almoco"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lt_horario_almoco_saida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saida Almoco"/>
+
+            <TextView
+                android:id="@+id/lt_horario_saida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Horario Saida"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
